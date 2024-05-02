@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+    margin: 0;
+}
+
+.card {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF9D;
+}
+
+.diamond-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: rotate(45deg);
+    gap: 0.25rem;
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.diamond-card .diamond {
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+.diamond-card .diamond:nth-child(odd) {
+    background-color: #0AA60C;
+}
+
+.diamond-card .diamond:nth-child(even) {
+    background-color: #72BE20;
+}
+
+.quote {
+    font-family: "Satisfy", cursive;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 2;
+}
